@@ -1,0 +1,12 @@
+<h3> Sign Up here! </h3>
+
+<%= form_for @user do |f| %>
+  <div> Username: <%= f.text_field :username %></div>
+  <div> Password: <%= f.password_field :password %> </div>
+  <div> Password Confirmation: <%= f.password_field :password_confirmation %> </div>
+  <div> First name: <%= f.text_field :firstname %> </div>
+  <div> Last name: <%= f.text_field :lastname %> </div>
+  <div> Email: <%= f.text_field :email %> </div>
+  <div> Birthday: <%= f.date_field :birthday %> </div>
+  <div> <%= f.submit %> </div>
+<% end %>
