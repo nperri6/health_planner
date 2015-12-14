@@ -4,8 +4,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-
+  get 'signin', to: 'sessions#new', as: 'signin'
   get 'signout', to: 'sessions#destroy', as: 'signout'
+  get 'signup', to: 'users#new', as: 'signup'
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :destroy, :create]
   # Example of regular route:
