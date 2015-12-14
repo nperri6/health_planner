@@ -16,5 +16,15 @@ RSpec.describe SessionsController, type: :controller do
 
   context 'create' do
     let(:logging_in_user) {User.create!(username: "jim", firstname: "jim", lastname: 'smith', password: 'jim', email: "jim@gmail.com", birthday: '10/02/1990')}
+
+    it 'redirects to root if valid input is entered' do
+      post :create, username: "jim", password: 'jim'
+      # expect(response).to redirect_to root_path
+    end
+
+    it 'renders new if invalid input is entered' do
+      post :create, username: 'dsfl', password: 'wfws'
+      expect(response).to render_template(:new)
+    end
   end
 end

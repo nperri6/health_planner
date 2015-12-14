@@ -40,6 +40,17 @@
         1,
         1,
         null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/nperri/health_planner/app/controllers/sessions_controller.rb": [
@@ -54,14 +65,14 @@
         null,
         null,
         1,
-        0,
-        0,
+        2,
+        2,
         0,
         0,
         0,
         null,
-        0,
-        0,
+        2,
+        2,
         null,
         null,
         null
@@ -178,6 +189,6 @@
         null
       ]
     },
-    "timestamp": 1450127131
+    "timestamp": 1450128245
   }
 }
