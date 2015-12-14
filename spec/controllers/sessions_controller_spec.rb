@@ -16,5 +16,5 @@ RSpec.describe SessionsController, type: :controller do
 
   context 'create' do
     let(:logging_in_user) {User.create!(username: "jim", firstname: "jim", lastname: 'smith', password: 'jim', email: "jim@gmail.com", birthday: '10/02/1990')}
-
+  end
 end
